@@ -1,0 +1,1 @@
+https://github.com/maxisimo/42-ft_linear_regression/blob/master/ft_linear_regression.py#L8
