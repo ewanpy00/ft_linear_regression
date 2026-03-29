@@ -12,7 +12,7 @@ MODEL_VERSION = 1
 
 @dataclass(frozen=True)
 class Dataset:
-    mileage_km: np.ndarray  # standardized (zero mean, unit variance)
+    mileage_km: np.ndarray
     price: np.ndarray
     mileage_mean: float
     mileage_std: float
@@ -54,7 +54,6 @@ def train(
     iterations: int = 5000,
     verbose_every: int | None = 500,
 ) -> np.ndarray:
-    """Return theta = [bias, weight] for price ≈ bias + weight * z(km)."""
     x = _design_matrix(data.mileage_km)
     y = data.price
     m = y.shape[0]

@@ -2,8 +2,6 @@
 
 Small end-to-end demo: **univariate linear regression** trained with **batch gradient descent** using **NumPy only** (no scikit-learn). It fits a price model from odometer readings (`km` → `price`), saves weights and normalization stats to JSON, and ships with CLIs for training, prediction, and an optional regression plot.
 
-**RU:** Учебный ML-проект для портфолио: линейная регрессия и градиентный спуск на NumPy, CLI, метрики, тесты и CI.
-
 ## Highlights
 
 - Vectorized gradient descent with explicit MSE cost
@@ -32,7 +30,7 @@ Batch gradient descent on \(\theta = [\theta_0, \theta_1]\) uses the gradient of
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -e ".[dev]"
 ```
 

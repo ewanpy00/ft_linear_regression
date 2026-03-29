@@ -1,5 +1,3 @@
-"""Univariate linear regression with gradient descent (from scratch, NumPy only)."""
-
 from linear_regression.core import (
     Dataset,
     evaluate,
