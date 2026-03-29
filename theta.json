@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "theta": [
+    6331.833333333325,
+    -1106.0198809926267
+  ],
+  "mileage_mean": 101066.25,
+  "mileage_std": 51565.1899106445,
+  "description": "price \u2248 theta0 + theta1 * (km - mean) / std"
+}

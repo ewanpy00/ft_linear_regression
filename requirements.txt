@@ -1,0 +1,7 @@
+numpy>=1.24,<3
+
+# Optional: plotting
+# matplotlib>=3.7,<4
+
+# Dev / tests
+# pytest>=7.4,<9

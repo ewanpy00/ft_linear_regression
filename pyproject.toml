@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "car-price-linear-regression"
+version = "0.1.0"
+description = "Univariate linear regression with gradient descent (NumPy)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "matplotlib>=3.7,<4",
+    "pytest>=7.4,<9",
+]
+plot = [
+    "matplotlib>=3.7,<4",
+]
+
+[tool.setuptools.packages.find]
+include = ["linear_regression*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
